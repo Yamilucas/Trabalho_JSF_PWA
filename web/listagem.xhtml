@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"> 
+    <h:head>
+        <title>Listagem</title>
+    </h:head>
+    <h:body>
+        <h1>Listagem de Produtos e Clientes</h1>
+        
+        <h2>Produtos</h2>
+        <h:panelGroup rendered="#{not empty produtoBean.produtos}">
+            <h:dataTable value="#{produtoBean.produtos}" var="item" border="1">
+                <h:column>
+   <h:outputLabel for="header" value="Nome:" />                   
+    #{item.nome}
+                </h:column>
+                <h:column>
+        <h:outputLabel for="header" value="Valor:" />
+        <h:outputText value="#{item.valor}" style="#{item.estoque lt 10 ? 'color: red;' : ''}"/>
+                    <h:panelGroup rendered="#{item.valor >= 100}">
+                        <br/>
+                        <strong>Produto Premium</strong>
+                    </h:panelGroup>
+                </h:column>
+                <h:column>
+        <h:outputLabel for="header" value="Estoque:" />
+        <h:outputText value="#{item.estoque}" />
+                </h:column>
+            </h:dataTable>
+        </h:panelGroup>
+        <h:panelGroup rendered="#{empty produtoBean.produtos}">
+            <p>Nenhum produto cadastrado.</p>
+        </h:panelGroup>
+        
+        <h2>Clientes</h2>
+        <h:panelGroup rendered="#{not empty clienteBean.clientes}">
+            <h:dataTable value="#{clienteBean.clientes}" var="item" border="1">
+                <h:column>
+         <h:outputLabel for="header" value="Nome:" />                   
+                    #{item.nome}
+                </h:column>
+                <h:column>
+        <h:outputLabel for="header" value="Email:" />                   
+                    #{item.email}
+                </h:column>
+                <h:column>
+                       <h:outputLabel for="header" value="Documento:" />                   
+                    #{item.documento}
+                </h:column>
+                <h:column>
+              <h:outputLabel for="header" value="Data Nascimento:" />                   
+                    #{item.dataNascimento}
+                </h:column>
+            </h:dataTable>
+        </h:panelGroup>
+        <h:panelGroup rendered="#{empty clienteBean.clientes}">
+            <p>Nenhum cliente cadastrado.</p>
+        </h:panelGroup>
+        
+       <h:form>
+            <br/>
+            <h:commandButton value="Voltar" action="index.xhtml" />
+        </h:form>
+    </h:body>
+</html>
