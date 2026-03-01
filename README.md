@@ -40,5 +40,6 @@ O projeto está organizado nesta estrutura:
 ## Estrutura de Execução
 
 - Aplicação executada em servidor web compatível com **JSF**
-- Acesso via navegador às páginas XHTML
+- Acesso via navegador às páginas **XHTML**
+
 
