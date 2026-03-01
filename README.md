@@ -6,11 +6,11 @@ Projeto desenvolvido para a disciplina de **Programação Web Avançada** (2025)
 
 ## Descrição do Projeto
 
-O sistema consiste em uma aplicação web simples para **cadastro e listagem de produtos e clientes**, desenvolvida utilizando **Java Server Faces (JSF)** e estruturada conforme o padrão MVC.
+O sistema consiste em uma aplicação web simples para **cadastro e listagem de produtos e clientes**, desenvolvida utilizando **Java Server Faces (JSF)**.
 
 ## Estrutura do Projeto
 
-O projeto está organizado nos seguintes pacotes:
+O projeto está organizado nesta estrutura:
 
 - **model** – Classes que representam os atributos de clientes e produtos.
 - **dao** – Responsável pela inserção e armazenamento de clientes e produtos em uma lista estática.
@@ -41,3 +41,4 @@ O projeto está organizado nos seguintes pacotes:
 
 - Aplicação executada em servidor web compatível com **JSF**
 - Acesso via navegador às páginas XHTML
+
