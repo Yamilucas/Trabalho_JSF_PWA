@@ -12,10 +12,10 @@ O sistema consiste em uma aplicação web simples para **cadastro e listagem de 
 
 O projeto está organizado nesta estrutura:
 
-- **model** – Classes que representam os atributos de clientes e produtos.
-- **dao** – Responsável pela inserção e armazenamento de clientes e produtos em uma lista estática.
-- **controller** – Responsável por organizar clientes e produtos e realizar a integração com as páginas XHTML.
-- **view** – Páginas XHTML responsáveis pela interface visual do sistema.
+- **model** – Classes que representam os atributos de clientes e produtos
+- **dao** – Responsável pela inserção e armazenamento de clientes e produtos em uma lista estática
+- **controller** – Responsável por organizar clientes e produtos e realizar a integração com as páginas **XHTML**
+- **view** – Páginas **XHTML** responsáveis pela interface visual do sistema
 
 ## Páginas XHTML Implementadas
 
@@ -41,5 +41,6 @@ O projeto está organizado nesta estrutura:
 
 - Aplicação executada em servidor web compatível com **JSF**
 - Acesso via navegador às páginas **XHTML**
+
 
 
